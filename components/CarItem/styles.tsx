@@ -24,4 +24,13 @@ export default StyleSheet.create({
         position: 'absolute',
         resizeMode: 'cover',
     },
+    subtitleCTA: {
+        textDecorationLine: 'underline',
+    },
+    buttonContainer: {
+        position: 'absolute',
+        bottom: 50,
+        left: 0,
+        right: 0,
+    },
 })
