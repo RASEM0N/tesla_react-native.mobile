@@ -1,14 +1,10 @@
 import React from 'react'
-import { ImageBackground, Text, View, Alert } from 'react-native'
+import { ImageBackground, Text, View, Alert, Dimensions } from 'react-native'
+import { CAR } from '../CarList/cars'
 import CustomButton from '../CustomButton/CustomButton'
 import styles from './styles'
 
-interface PropsType {
-    name: string
-    tagline: string
-    taglineCTA?: string
-    image: any
-}
+interface PropsType extends CAR {}
 
 const CarItem: React.FC<PropsType> = ({ name, tagline, taglineCTA, image }) => {
     return (

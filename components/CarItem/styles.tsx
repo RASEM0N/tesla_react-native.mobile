@@ -1,14 +1,17 @@
-import { StyleSheet } from 'react-native'
+import { Dimensions, StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
     carContainer: {
         width: '100%',
-        height: '100%',
+        height: Dimensions.get('screen').height,
     },
     titles: {
         marginTop: '30%',
         width: '100%',
         alignItems: 'center',
+    },
+    subtitleCTA: {
+        textDecorationLine: 'underline',
     },
     title: {
         fontSize: 40,
@@ -21,16 +24,13 @@ export default StyleSheet.create({
     image: {
         width: '100%',
         height: '100%',
-        position: 'absolute',
         resizeMode: 'cover',
+        position: 'absolute',
     },
-    subtitleCTA: {
-        textDecorationLine: 'underline',
-    },
+
     buttonContainer: {
         position: 'absolute',
         bottom: 50,
-        left: 0,
-        right: 0,
+        width: '100%',
     },
 })
